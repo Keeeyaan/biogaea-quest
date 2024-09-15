@@ -22,9 +22,7 @@
       }
     },
     "preview3": {
-      "developmentClient": true
-    },
-    "preview4": {
+      "developmentClient": true,
       "distribution": "internal"
     },
     "production": {}
