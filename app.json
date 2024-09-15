@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Biogaea Quest",
+    "scheme": "biogaea-quest",
+    "slug": "biogaea-quest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4F3D36"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.keeeyaan.biogaeaquest"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "package": "com.keeeyaan.biogaeaquest"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "@config-plugins/react-native-pdf",
+      "@config-plugins/react-native-blob-util",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "807e8fc5-c730-4345-97f6-9715bb20fa3e"
+      }
+    }
+  }
+}
