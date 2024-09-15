@@ -18,6 +18,7 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import VideoModal from "./VideoModal";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const VIDEO_MAP: { [key: string]: any } = {
   "genetic-engineering": require("@/assets/videos/genetic-engineering.mp4"),
@@ -32,7 +33,7 @@ interface TopSheetProps {
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 const MIN_HEIGHT = 130; // Minimum height of the TopSheet
-const MAX_HEIGHT = SCREEN_HEIGHT * 0.5; // Set MAX_HEIGHT to half the screen height for better visibility
+const MAX_HEIGHT = SCREEN_HEIGHT / 4; // Set MAX_HEIGHT to half the screen height for better visibility
 const BUTTON_SHOW_HEIGHT = MIN_HEIGHT + 30; // Lowered the threshold to make buttons appear sooner
 
 const AnimatedLinearGradient = Animated.createAnimatedComponent(
@@ -93,14 +94,20 @@ const TopSheet = ({ topic }: TopSheetProps) => {
           className="w-full z-10 absolute top-0 justify-between rounded-b-2xl px-[24px]"
         >
           {/* Title Section - Always at the top */}
-          <View className="flex-row items-center gap-4 mt-12 z-20">
+          <View
+            className="flex-row items-center gap-4 z-20"
+            style={{ marginTop: RFValue(58, 805) }}
+          >
             <Antdesign
               name="left"
               size={30}
               color="#fff"
               onPress={() => router.push("/")}
             />
-            <Text className="text-white text-xl font-pmedium">
+            <Text
+              className="text-white text-xl font-pmedium"
+              style={{ fontSize: RFValue(18, 805) }}
+            >
               {formattedTopicText}
             </Text>
           </View>
@@ -109,9 +116,10 @@ const TopSheet = ({ topic }: TopSheetProps) => {
             <Animated.View style={[rButtonContainerStyle]}>
               <View className="flex-row justify-between">
                 <TouchableOpacity
-                  className={`bg-[#6EA714] px-4 py-3 mr-2 rounded`}
+                  className={`bg-[#6EA714]  mr-2 rounded`}
                   activeOpacity={0.7}
                   onPress={() => setIsVideoVisible(true)}
+                  style={{ padding: RFValue(10, 805) }}
                 >
                   <Text
                     className={`text-white text-center text-base font-psemibold`}
@@ -120,7 +128,8 @@ const TopSheet = ({ topic }: TopSheetProps) => {
                   </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  className={`bg-[#6EA714] px-4 py-3 flex-1 rounded`}
+                  className={`bg-[#6EA714] flex-1 rounded`}
+                  style={{ padding: RFValue(10, 805) }}
                   activeOpacity={0.7}
                   onPress={() =>
                     router.push({ pathname: `/assesment/${topic}` as any })

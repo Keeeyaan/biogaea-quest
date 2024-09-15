@@ -2,9 +2,10 @@ import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react";
 import { Dimensions, Image, Text, View } from "react-native";
-import GroupButton from "@/components/GroupButton";
 import { LinearGradient } from "expo-linear-gradient";
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
+import GroupButton from "@/components/GroupButton";
 import CardButton from "@/components/CardButton";
 
 const TOPICS = [
@@ -41,10 +42,16 @@ export default function App() {
     <SafeAreaView className="flex-1 h-full bg-[#FFF8F5]">
       <View className="flex-1 mt-5 px-6">
         <View className="">
-          <Text className="text-[#4E4E4E] font-pregular text-xl">
+          <Text
+            className="text-[#4E4E4E] font-pregular text-xl"
+            style={{ fontSize: RFValue(20, 805) }}
+          >
             Hello There!
           </Text>
-          <Text className="font-pregular text-[#7DB91F] text-[38px]">
+          <Text
+            className="font-pregular text-[#7DB91F] text-[38px]"
+            style={{ fontSize: RFValue(38, 805) }}
+          >
             What do you want {"\n"}
             <Text className="font-pbold">to do</Text> today?
           </Text>

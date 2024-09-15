@@ -108,7 +108,7 @@ const TriviaQuiz = () => {
   return (
     <View className="flex-1 p-4 bg-[#FFF8F5]">
       {/* Header with back button and question counter */}
-      <View className="flex-row items-center justify-between my-14">
+      <View className="flex-row items-center justify-between my-10">
         <Antdesign
           name="left"
           size={30}
@@ -119,7 +119,7 @@ const TriviaQuiz = () => {
           }}
           className="font-bold"
         />
-        <Text className="text-xl font-pbold">
+        <Text className="text-xl font-pmedium">
           {currentQuestionIndex + 1} / {shuffledQuestions.length}
         </Text>
       </View>
@@ -140,7 +140,7 @@ const TriviaQuiz = () => {
 
       {/* Question Text */}
       <View className="bg-[#FFE5D9] p-2 min-h-[150px] rounded justify-center items-center mb-8">
-        <Text className="text-xl font-pbold text-center">
+        <Text className="text-xl font-psemibold text-center">
           {currentQuestion.question}
         </Text>
       </View>

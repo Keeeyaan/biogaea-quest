@@ -1,4 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const GroupButton = ({
   handleSelect,
@@ -8,7 +9,10 @@ const GroupButton = ({
   selected: string;
 }) => {
   return (
-    <View className="w-[300px] h-[50px] bg-[#AB8475] rounded-lg">
+    <View
+      className="w-[300px] h-[50px] bg-[#AB8475] rounded-lg"
+      style={{ height: RFValue(48, 805) }}
+    >
       <View className="w-full h-full flex flex-row justify-between">
         <TouchableOpacity
           className={`flex-1 justify-center items-center rounded-tl-lg rounded-bl-lg ${
