@@ -4,6 +4,7 @@ import { useRouter } from "expo-router";
 import Antdesign from "@expo/vector-icons/AntDesign";
 import { TRIVIA_QUESTIONS } from "@/constant/trivia-questions";
 import { AnimatedCircularProgress } from "react-native-circular-progress";
+import { RFValue } from "react-native-responsive-fontsize";
 
 // Flatten and shuffle all questions
 const ALL_QUESTIONS = Object.values(TRIVIA_QUESTIONS).flat();
@@ -111,7 +112,7 @@ const TriviaQuiz = () => {
       <View className="flex-row items-center justify-between my-10">
         <Antdesign
           name="left"
-          size={30}
+          size={24}
           color="#000"
           onPress={() => {
             clearInterval(timerRef.current!);
@@ -119,7 +120,7 @@ const TriviaQuiz = () => {
           }}
           className="font-bold"
         />
-        <Text className="text-xl font-pmedium">
+        <Text className="font-pmedium" style={{ fontSize: RFValue(16, 805) }}>
           {currentQuestionIndex + 1} / {shuffledQuestions.length}
         </Text>
       </View>
@@ -134,13 +135,23 @@ const TriviaQuiz = () => {
           backgroundColor="#e0e0e0"
           rotation={0}
         >
-          {() => <Text className="text-xl font-pbold">{timeLeft}s</Text>}
+          {() => (
+            <Text
+              className="text-xl font-pbold"
+              style={{ fontSize: RFValue(18, 805) }}
+            >
+              {timeLeft}s
+            </Text>
+          )}
         </AnimatedCircularProgress>
       </View>
 
       {/* Question Text */}
-      <View className="bg-[#FFE5D9] p-2 min-h-[150px] rounded justify-center items-center mb-8">
-        <Text className="text-xl font-psemibold text-center">
+      <View className="bg-[#FFE5D9] p-2 min-h-[150px] rounded justify-center items-center mb-6">
+        <Text
+          className="font-psemibold text-center"
+          style={{ fontSize: RFValue(18, 805) }}
+        >
           {currentQuestion.question}
         </Text>
       </View>
@@ -150,11 +161,15 @@ const TriviaQuiz = () => {
         {currentQuestion.choices.map((choice: string, index: number) => (
           <TouchableOpacity
             key={index}
-            className="bg-[#6EA714] p-4 my-2 rounded"
+            className="bg-[#6EA714] mb-2 rounded"
+            style={{ padding: RFValue(16, 805) }}
             activeOpacity={0.7}
             onPress={() => handleAnswer(choice)}
           >
-            <Text className="text-white text-base font-pmedium text-center">
+            <Text
+              className="text-white font-psemibold text-center"
+              style={{ fontSize: RFValue(14, 805) }}
+            >
               {choice}
             </Text>
           </TouchableOpacity>

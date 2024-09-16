@@ -96,7 +96,7 @@ const TopSheet = ({ topic }: TopSheetProps) => {
           {/* Title Section - Always at the top */}
           <View
             className="flex-row items-center gap-4 z-20"
-            style={{ marginTop: RFValue(36, 805) }}
+            style={{ marginTop: RFValue(45, 840) }}
           >
             <Antdesign
               name="left"
