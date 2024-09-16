@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { View, Text, Pressable, ScrollView } from "react-native";
+import { View, Text, Pressable, ScrollView, Dimensions } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import Antdesign from "@expo/vector-icons/AntDesign";
+import { RFValue } from "react-native-responsive-fontsize";
 
 import { ASSESSMENTS } from "@/constant/assesments";
 import CustomButton from "@/components/CustomButton";
 import ProgressBar from "@/components/ProgressBar";
 import AssessmentResult from "../assessment-result";
+
+const screenHeight = Dimensions.get("window").height;
 
 const AssessmentScreen = () => {
   const { topic } = useLocalSearchParams();
@@ -60,48 +63,66 @@ const AssessmentScreen = () => {
   }
   return (
     <LinearGradient colors={["#AC8575", "#463630"]} className="flex-1 p-4">
-      <Pressable className="mt-12 items-end mb-4" onPress={() => router.back()}>
-        <Antdesign name="close" size={24} color="#fff" />
-      </Pressable>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Pressable
+          style={{ marginTop: RFValue(28, 805) }}
+          className="mt-8 items-end mb-4"
+          onPress={() => router.back()}
+        >
+          <Antdesign name="close" size={24} color="#fff" />
+        </Pressable>
 
-      <Text className="text-center text-white font-psemibold text-base">
-        Topic
-      </Text>
-      <Text className="text-center text-white font-pbold text-2xl mb-4">
-        {formattedTopicText}
-      </Text>
+        <Text
+          className="text-center text-white font-psemibold text-base"
+          style={{ fontSize: RFValue(14, 805) }}
+        >
+          Topic
+        </Text>
+        <Text
+          className="text-center text-white font-pbold text-2xl mb-4"
+          style={{ fontSize: RFValue(20, 805), marginBottom: RFValue(4, 805) }}
+        >
+          {formattedTopicText}
+        </Text>
 
-      <View className="bg-white rounded-lg p-3 min-h-[650px] overflow-hidden">
-        <View className="mb-6 items-center mt-2">
-          <Text className="text-base font-pregular text-center mb-4">
-            Question {currentQuestionIndex + 1} out of {totalQuestions}
-          </Text>
-          <ProgressBar progress={progress} />
-        </View>
+        <View
+          className="bg-white rounded-lg p-3 overflow-hidden"
+          style={{ minHeight: screenHeight / 1.3 }}
+        >
+          <View className="mb-6 items-center mt-2">
+            <Text
+              className="text-base font-pregular text-center mb-4"
+              style={{ fontSize: RFValue(16, 805) }}
+            >
+              Question {currentQuestionIndex + 1} out of {totalQuestions}
+            </Text>
+            <ProgressBar progress={progress} />
+          </View>
 
-        <View className="bg-[#FFE5D9] p-2 h-[180px] rounded justify-center  items-center">
-          <Text className="text-xl text-center font-psemibold">
-            {currentQuestion.question}
-          </Text>
+          <View className="bg-[#FFE5D9] px-2 py-6 rounded justify-center  items-center">
+            <Text
+              className="text-xl text-center font-psemibold"
+              style={{ fontSize: RFValue(18, 805) }}
+            >
+              {currentQuestion.question}
+            </Text>
+          </View>
+          <View className="mt-6" style={{ marginTop: RFValue(18, 805) }}>
+            <Text className="mb-2 font-pmedium text-sm">Choices:</Text>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              {currentQuestion.choices.map((choice, index) => (
+                <CustomButton
+                  key={index}
+                  handlePress={() => handleAnswer(choice)}
+                  title={choice}
+                  textStyles="text-center"
+                  marginBottom={8}
+                />
+              ))}
+            </ScrollView>
+          </View>
         </View>
-        <View className="mt-6">
-          <Text className="mb-2 font-pmedium text-sm">Choices:</Text>
-          <ScrollView
-            className="max-h-[320px]"
-            showsVerticalScrollIndicator={false}
-          >
-            {currentQuestion.choices.map((choice, index) => (
-              <CustomButton
-                key={index}
-                handlePress={() => handleAnswer(choice)}
-                title={choice}
-                textStyles="text-center"
-                marginBottom={8}
-              />
-            ))}
-          </ScrollView>
-        </View>
-      </View>
+      </ScrollView>
     </LinearGradient>
   );
 };

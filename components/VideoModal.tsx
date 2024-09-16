@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Modal, View, Dimensions, Pressable } from "react-native";
 import { AVPlaybackNativeSource, ResizeMode, Video } from "expo-av";
 import { AntDesign } from "@expo/vector-icons";
+import { RFValue } from "react-native-responsive-fontsize";
 
 interface VideoModalProps {
   isVisible: boolean;
@@ -16,7 +17,12 @@ const VideoModal = ({ isVisible, onClose, videoSource }: VideoModalProps) => {
       <View style={{ flex: 1, backgroundColor: "black" }}>
         <Pressable
           onPress={onClose}
-          style={{ position: "absolute", top: 60, right: 20, zIndex: 1 }}
+          style={{
+            position: "absolute",
+            top: RFValue(30, 805),
+            right: 20,
+            zIndex: 1,
+          }}
         >
           <AntDesign name="close" size={30} color="#fff" />
         </Pressable>

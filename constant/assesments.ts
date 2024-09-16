@@ -142,6 +142,30 @@ export const ASSESSMENTS = {
       choices: ["bacteria", "cells", "plasmid", "vectors"],
       answer: "",
     },
+    {
+      id: 14,
+      question:
+        "I - Since ancient times, the practice of genetic engineering had begun. II - Artificial selection is done to directly manipulate genes focusing on the physical traits among organisms.",
+      choices: [
+        "Statement I is correct",
+        "Statement II is correct",
+        "Statement I and II are both correct",
+        "Statement I and II are both incorrect",
+      ],
+      answer: "",
+    },
+    {
+      id: 15,
+      question:
+        "I – Enzymes help in recombinant DNA technology by carrying and integrating the desired gene. II - Host organisms are used to propagate the recombinant DNA.",
+      choices: [
+        "Statement I is correct",
+        "Statement II is correct",
+        "Statement I and II are both correct",
+        "Statement I and II are both incorrect",
+      ],
+      answer: "",
+    },
   ],
   "organ-systems-of-representative-animals": [
     {
@@ -159,7 +183,7 @@ export const ASSESSMENTS = {
     {
       id: 2,
       question:
-        "through the intestines. 2. During the final stages of human gestation, receptors for the hormone oxytocin increase on the smooth muscle cells of the uterus. The release of the oxytocin during labor stimulates the smooth muscle tissue in the wall of the uterus. The vigorous contraction of the uterine smooth muscle helps push the baby through the birth canal so that delivery can occur. This process involves the interaction of which organ system?",
+        "During the final stages of human gestation, receptors for the hormone oxytocin increase on the smooth muscle cells of the uterus. The release of the oxytocin during labor stimulates the smooth muscle tissue in the wall of the uterus. The vigorous contraction of the uterine smooth muscle helps push the baby through the birth canal so that delivery can occur. This process involves the interaction of which organ system?",
       choices: [
         "Endocrine and reproductive only",
         "Endocrine and muscular only",

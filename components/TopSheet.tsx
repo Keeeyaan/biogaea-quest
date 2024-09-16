@@ -33,7 +33,7 @@ interface TopSheetProps {
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 const MIN_HEIGHT = 130; // Minimum height of the TopSheet
-const MAX_HEIGHT = SCREEN_HEIGHT / 4; // Set MAX_HEIGHT to half the screen height for better visibility
+const MAX_HEIGHT = SCREEN_HEIGHT / 4.4; // Set MAX_HEIGHT to half the screen height for better visibility
 const BUTTON_SHOW_HEIGHT = MIN_HEIGHT + 30; // Lowered the threshold to make buttons appear sooner
 
 const AnimatedLinearGradient = Animated.createAnimatedComponent(
@@ -96,7 +96,7 @@ const TopSheet = ({ topic }: TopSheetProps) => {
           {/* Title Section - Always at the top */}
           <View
             className="flex-row items-center gap-4 z-20"
-            style={{ marginTop: RFValue(58, 805) }}
+            style={{ marginTop: RFValue(36, 805) }}
           >
             <Antdesign
               name="left"
@@ -123,6 +123,7 @@ const TopSheet = ({ topic }: TopSheetProps) => {
                 >
                   <Text
                     className={`text-white text-center text-base font-psemibold`}
+                    style={{ fontSize: RFValue(15, 805) }}
                   >
                     Play Video
                   </Text>
@@ -137,6 +138,7 @@ const TopSheet = ({ topic }: TopSheetProps) => {
                 >
                   <Text
                     className={`text-white text-center text-base font-psemibold`}
+                    style={{ fontSize: RFValue(15, 805) }}
                   >
                     Take Assessment
                   </Text>

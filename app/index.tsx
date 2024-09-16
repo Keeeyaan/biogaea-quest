@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react";
 import { Dimensions, Image, Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
 
 import GroupButton from "@/components/GroupButton";
 import CardButton from "@/components/CardButton";
