@@ -22,7 +22,7 @@ export const ASSESSMENTS = {
         "inbreeding",
         "selective breeding",
       ],
-      answer: "",
+      answer: "inbreeding",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ export const ASSESSMENTS = {
         "gene splicing",
         "gel electrophoresis",
       ],
-      answer: "",
+      answer: "gene splicing",
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ export const ASSESSMENTS = {
         "gene splicing",
         "gel electrophoresis",
       ],
-      answer: "",
+      answer: "cloning",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ export const ASSESSMENTS = {
         "genetic engineering",
         "selective breeding",
       ],
-      answer: "",
+      answer: "genetic engineering",
     },
     {
       id: 6,
@@ -70,7 +70,7 @@ export const ASSESSMENTS = {
         "both a and b",
         "none of a and b",
       ],
-      answer: "",
+      answer: "Recombinant DNA technology",
     },
     {
       id: 7,
@@ -82,7 +82,7 @@ export const ASSESSMENTS = {
         "restriction enzymes",
         "vector enzymes",
       ],
-      answer: "",
+      answer: "restriction enzymes",
     },
     {
       id: 8,
@@ -93,7 +93,7 @@ export const ASSESSMENTS = {
         "plasmid and DNA",
         "restriction and DNA",
       ],
-      answer: "",
+      answer: "bacteriophage and plasmid",
     },
     {
       id: 9,
@@ -104,13 +104,14 @@ export const ASSESSMENTS = {
         "Insertion of the genetic sequences into other sequences of another organism.",
         "Selection of the perfect enzymes with which the gene has to be integrated",
       ],
-      answer: "",
+      answer:
+        "Selection of the perfect enzymes with which the gene has to be integrated",
     },
     {
       id: 10,
       question: "All of these are tools in recombinant DNA technology except",
       choices: ["enzymes", "host organisms", "restriction enzymes", "vectors"],
-      answer: "",
+      answer: "restriction enzymes",
     },
     {
       id: 11,
@@ -121,7 +122,7 @@ export const ASSESSMENTS = {
         "recombinant technology",
         "selective breeding",
       ],
-      answer: "",
+      answer: "recombinant technology",
     },
     {
       id: 12,
@@ -133,14 +134,14 @@ export const ASSESSMENTS = {
         "genetic engineering",
         "hybridization",
       ],
-      answer: "",
+      answer: "hybridization",
     },
     {
       id: 13,
       question:
         "This is the most commonly used host organism in recombinant DNA technology.",
       choices: ["bacteria", "cells", "plasmid", "vectors"],
-      answer: "",
+      answer: "bacteria",
     },
     {
       id: 14,
@@ -152,7 +153,7 @@ export const ASSESSMENTS = {
         "Statement I and II are both correct",
         "Statement I and II are both incorrect",
       ],
-      answer: "",
+      answer: "Statement I is correct",
     },
     {
       id: 15,
@@ -164,7 +165,7 @@ export const ASSESSMENTS = {
         "Statement I and II are both correct",
         "Statement I and II are both incorrect",
       ],
-      answer: "",
+      answer: "Statement II is correct",
     },
   ],
   "organ-systems-of-representative-animals": [
@@ -178,7 +179,7 @@ export const ASSESSMENTS = {
         "Sensory receptors in bones send signals about body position to the brain",
         "The brain sends signals that control the speed at which food moves through the intestines.",
       ],
-      answer: "",
+      answer: "Hormones provide feedback that affects neutral processing",
     },
     {
       id: 2,
@@ -190,7 +191,7 @@ export const ASSESSMENTS = {
         "Endocrine, muscular and reproductive",
         "Endocrine, reproductive, and excretory",
       ],
-      answer: "",
+      answer: "Endocrine, muscular and reproductive",
     },
     {
       id: 3,
@@ -202,7 +203,7 @@ export const ASSESSMENTS = {
         "Nervous systems",
         "Muscular systems",
       ],
-      answer: "",
+      answer: "Ciculatory systems",
     },
     {
       id: 4,
@@ -214,7 +215,7 @@ export const ASSESSMENTS = {
         "Nervous and circulatory systems",
         "Circulatory and digestive systems",
       ],
-      answer: "",
+      answer: "Circulatory and digestive systems",
     },
     {
       id: 5,
@@ -226,7 +227,7 @@ export const ASSESSMENTS = {
         "Nervous and circulatory systems",
         "Nervous and immune systems",
       ],
-      answer: "",
+      answer: "Circulatory and respiratory systems",
     },
     {
       id: 6,
@@ -238,7 +239,8 @@ export const ASSESSMENTS = {
         "The respiratory system increases the breathing rate, and the circulatory system increases blood pressure to provide tissues with more oxygen.",
         "The skeletal system releases additional calcium, and the circulatory system retains more sodium in the blood to provide muscles with ions for contraction.",
       ],
-      answer: "",
+      answer:
+        "The respiratory system increases the breathing rate, and the circulatory system increases blood pressure to provide tissues with more oxygen.",
     },
     {
       id: 7,
@@ -250,7 +252,7 @@ export const ASSESSMENTS = {
         "The enzyme amylase and pepsin",
         "Hydrochloric acid by the stomach",
       ],
-      answer: "",
+      answer: "Muscular contractions",
     },
     {
       id: 8,
@@ -262,7 +264,7 @@ export const ASSESSMENTS = {
         "Distributing nutrients",
         "Fighting infections",
       ],
-      answer: "",
+      answer: "Distributing nutrients",
     },
     {
       id: 9,
@@ -274,7 +276,8 @@ export const ASSESSMENTS = {
         "Increased blood flow allows for an increase in the exchange of carbon dioxide and oxygen at the site of the injury.",
         "Increased blood flow removes infected cells from the body at the site of the injury.",
       ],
-      answer: "",
+      answer:
+        "Increased blood flow carries white blood cells to the site of the injury.",
     },
     {
       id: 10,
@@ -286,7 +289,7 @@ export const ASSESSMENTS = {
         "Immune and endocrine",
         "Skeletal and circulatory",
       ],
-      answer: "",
+      answer: "Circulatory and respiratory",
     },
     {
       id: 11,
@@ -298,7 +301,7 @@ export const ASSESSMENTS = {
         "Nervous, respiratory, and muscular system",
         "Respiratory, endocrine and excretory system",
       ],
-      answer: "",
+      answer: "Nervous, respiratory, and muscular system",
     },
     {
       id: 12,
@@ -310,7 +313,7 @@ export const ASSESSMENTS = {
         "Nervous and digestive",
         "Urinary and muscular",
       ],
-      answer: "",
+      answer: "Nervous and digestive",
     },
     {
       id: 13,
@@ -322,19 +325,19 @@ export const ASSESSMENTS = {
         "Sensory receptors in bones send signals about body position to the brain",
         "The brain sends signal that control the speed at which food moves through the intestines",
       ],
-      answer: "",
+      answer: "Hormones provide feedback that affects neuron processing",
     },
     {
       id: 14,
       question:
         "Which body systems work together to protect the body from pathogens?",
       choices: [
-        "WCirculatory and immune",
+        "Circulatory and immune",
         "Digestive and excretory",
         "Endocrine and reproductive",
         "Muscular and vascular",
       ],
-      answer: "",
+      answer: "Circulatory and immune",
     },
     {
       id: 15,
@@ -345,7 +348,7 @@ export const ASSESSMENTS = {
         "The digestive system gives the body energy and nutrients",
         "The digestive system transport blood to all the other systems",
       ],
-      answer: "",
+      answer: "The digestive system gives the body energy and nutrients",
     },
   ],
   "process-of-evolution": [
@@ -353,7 +356,7 @@ export const ASSESSMENTS = {
       id: 1,
       question: "Refers to a change over time",
       choices: ["evolution", "gradualism", "migration", "mutation"],
-      answer: "",
+      answer: "evolution",
     },
     {
       id: 2,
@@ -365,14 +368,14 @@ export const ASSESSMENTS = {
         "Theory of Natural Selection",
         "Theory of Survival",
       ],
-      answer: "",
+      answer: "Theory of Descent with Modification",
     },
     {
       id: 3,
       question:
         "Explains the difference in survival of individuals and how they reproduce in a particular environment",
       choices: ["evolution", "gene flow", "gradualism", "natural selection"],
-      answer: "",
+      answer: "natural selection",
     },
     {
       id: 4,
@@ -384,14 +387,14 @@ export const ASSESSMENTS = {
         "genetic flow",
         "natural selection",
       ],
-      answer: "",
+      answer: "bottleneck effect",
     },
     {
       id: 5,
       question:
         "The process of the movement of genes from one population to another",
       choices: ["evolution", "gene flow", "gradualism", "natural selection"],
-      answer: "",
+      answer: "gene flow",
     },
     {
       id: 6,
@@ -402,7 +405,7 @@ export const ASSESSMENTS = {
         "natural selection",
         "a, b and c",
       ],
-      answer: "",
+      answer: "a, b and c",
     },
     {
       id: 7,
@@ -413,7 +416,7 @@ export const ASSESSMENTS = {
         "genetic variation",
         "mutation",
       ],
-      answer: "",
+      answer: "mutation",
     },
     {
       id: 8,
@@ -424,7 +427,7 @@ export const ASSESSMENTS = {
         "genetic variation",
         "mutation",
       ],
-      answer: "",
+      answer: "gene flow",
     },
     {
       id: 9,
@@ -436,7 +439,7 @@ export const ASSESSMENTS = {
         "natural selection",
         "natural variation",
       ],
-      answer: "",
+      answer: "natural variation",
     },
     {
       id: 10,
@@ -447,7 +450,7 @@ export const ASSESSMENTS = {
         "Charles Darwin",
         "Jean Baptiste de Lamarck",
       ],
-      answer: "",
+      answer: "Charles Darwin",
     },
     {
       id: 11,
@@ -458,7 +461,7 @@ export const ASSESSMENTS = {
         "Charles Darwin",
         "Jean Baptiste de Lamarck",
       ],
-      answer: "",
+      answer: "Jean Baptiste de Lamarck",
     },
     {
       id: 12,
@@ -470,7 +473,7 @@ export const ASSESSMENTS = {
         "Jean Baptiste de Lamarck",
         "Thomas Malthus",
       ],
-      answer: "",
+      answer: "Thomas Malthus",
     },
     {
       id: 13,
@@ -481,6 +484,7 @@ export const ASSESSMENTS = {
         "Jean Baptiste de Lamarck",
         "Thomas Malthus",
       ],
+      answer: "Carolus Linnaeus",
     },
     {
       id: 14,
@@ -492,7 +496,7 @@ export const ASSESSMENTS = {
         "Jean Baptiste de Lamarck",
         "Thomas Malthus",
       ],
-      answer: "",
+      answer: "Jean Baptiste de Lamarck",
     },
     {
       id: 15,
@@ -503,7 +507,7 @@ export const ASSESSMENTS = {
         "Jean Baptiste de Lamarck",
         "Thomas Malthus",
       ],
-      answer: "",
+      answer: "Charles Darwin",
     },
   ],
   "interaction-and-interdependence": [
@@ -512,7 +516,7 @@ export const ASSESSMENTS = {
       question:
         "What biotic relationship occurs in organism where one species is benefited while the other is harmed?",
       choices: ["commensalism", "mutualism", "parasitism", "predation"],
-      answer: "",
+      answer: "parasitism",
     },
     {
       id: 2,
@@ -524,7 +528,7 @@ export const ASSESSMENTS = {
         "change in seasons can influence conduct of living beings",
         "desert biological systems have restricted life forms because of outrageous parched conditions",
       ],
-      answer: "",
+      answer: "various predators may compete for a similar prey",
     },
     {
       id: 3,
@@ -535,7 +539,7 @@ export const ASSESSMENTS = {
         "interaction and interdependence",
         "biotic potential and environmental resistance",
       ],
-      answer: "",
+      answer: "interaction and interdependence",
     },
     {
       id: 4,
@@ -547,25 +551,29 @@ export const ASSESSMENTS = {
         "polar bears living in a very cold environment",
         "A young woman gave birth to a healthy baby boy",
       ],
-      answer: "",
+      answer: "polar bears living in a very cold environment",
     },
     {
       id: 5,
       question:
         "The carrying capacity is the maximum number of organisms that an ecosystem can support. What factors influence the carrying capacity?",
+      factors:
+        "I. competition | II. limiting factor | III. biotic potential | IV. environmental resistance",
       choices: ["I and II", "I and III", "III and IV", "I, II, and IV"],
-      answer: "",
+      answer: "III and IV",
     },
     {
       id: 6,
       question: "What factors control the increase in population growth?",
+      factors:
+        "I. water | II. disease | III. sunlight | IV. predation | V. competitors | VI. temperature | VII. adequate food | VIII. unsuitable habitat",
       choices: [
         "II, IV, V, VII",
         "I, III, V, VIII",
         "I, III, IV, V",
         "II, IV, V, VIII",
       ],
-      answer: "",
+      answer: "II, IV, V, VIII",
     },
     {
       id: 7,
@@ -577,14 +585,14 @@ export const ASSESSMENTS = {
         "carrying capacity",
         "environmental resistance",
       ],
-      answer: "",
+      answer: "limiting factor",
     },
     {
       id: 8,
       question:
         "Which refers to the symbiotic relationship in which both organisms are benefited?",
       choices: ["commensalism", "mutualism", "parasitism", "predation"],
-      answer: "",
+      answer: "mutualism",
     },
     {
       id: 9,
@@ -596,14 +604,14 @@ export const ASSESSMENTS = {
         "number of offspring",
         "lack of suitable habitat",
       ],
-      answer: "",
+      answer: "number of offspring",
     },
     {
       id: 10,
       question:
         "What do you call the area in which living things interact with one another and with their environment?",
       choices: ["commmunity", "ecosystem", "habitat", "population"],
-      answer: "",
+      answer: "ecosystem",
     },
     {
       id: 11,
@@ -615,7 +623,8 @@ export const ASSESSMENTS = {
         "Biotic potential and environmental resistance are the two factors that increase the population growth.",
         "Biotic potential and environmental resistance are the two factors that limit the population explosion.",
       ],
-      answer: "",
+      answer:
+        "Biotic potential increases the population while environmental resistance decreases its growth.",
     },
     {
       id: 12,
@@ -627,21 +636,22 @@ export const ASSESSMENTS = {
         "Different life forms will have diverse reproductive life expectancies.",
         "Organisms that abide in a similar situtation will have similar potentials.",
       ],
-      answer: "",
+      answer:
+        "Organisms that abide in a similar situtation will have similar potentials.",
     },
     {
       id: 13,
       question:
         "What is the symbiotic relationship in an ecosystem when one organism benefits and the other is unaffected?",
       choices: ["Commensalism", "Mutualism", "Parasitism", "Predation"],
-      answer: "",
+      answer: "Commensalism",
     },
     {
       id: 14,
       question:
         "What is the type of interaction when the two species use the same limited resources and struggle with one another to survive?",
       choices: ["Competition", "Mutualism", "Predation", "Symbiosis"],
-      answer: "",
+      answer: "Competition",
     },
     {
       id: 15,
@@ -652,7 +662,148 @@ export const ASSESSMENTS = {
         "Have no effect in the ecosystem",
         "Decrease the number of predator",
       ],
-      answer: "",
+      answer: "Remove vulnerable prey",
+    },
+  ],
+  "marine-and-coastal-processes": [
+    {
+      id: 1,
+      question: "Which of the following is NOT a coastal process?",
+      choices: ["landslides", "storm surge", "tides", "waves"],
+      answer: "landslides",
+    },
+    {
+      id: 2,
+      question:
+        "Which of the following is caused by the gravitational pull of the moon and Earth?",
+      choices: ["sea level rise", "storm surge", "tides", "tsunami"],
+      answer: "sea level rise",
+    },
+    {
+      id: 3,
+      question:
+        "Which of the following is attributed to the rising of sea level in the polar region?",
+      choices: ["continent", "crust", "glacier", "snow"],
+      answer: "glacier",
+    },
+    {
+      id: 4,
+      question:
+        "What refers to the rising of seawater due to pressure and wind associated with a storm?",
+      choices: ["crustal movement", "storm surge", "tides", "waves"],
+      answer: "storm surge",
+    },
+    {
+      id: 5,
+      question:
+        "Which of the following statements is NOT TRUE about coastal processes?",
+      choices: [
+        "Beach is prone to erosion.",
+        "Erosion only occurs in the upland areas.",
+        "Wind is a contributory factor to storm surge.",
+        "Ocean waves cause water to move in the seashore.",
+      ],
+      answer: "Wind is a contributory factor to storm surge.",
+    },
+    {
+      id: 6,
+      question: "Which of the following is NOT a coastal hazard?",
+      choices: [
+        "coastal erosion",
+        "landslide",
+        "saltwater intrusion",
+        "submersion",
+      ],
+      answer: "landslides",
+    },
+    {
+      id: 7,
+      question:
+        "What is described as an induced flow of seawater into freshwater aquifers primarily caused by groundwater development near the coast?",
+      choices: [
+        "coastal erosion",
+        "saltwater intrusion",
+        "storm surge",
+        "submersion",
+      ],
+      answer: "saltwater intrusion",
+    },
+    {
+      id: 8,
+      question: "Which of the following is NOT an agent of coastal erosion?",
+      choices: ["land pollution", "ocean waves", "storms", "tides"],
+      answer: "land pollution",
+    },
+    {
+      id: 9,
+      question:
+        "What do you call the movement of sediments from the visible portion of a beach to the nearshore region of the coast?",
+      choices: [
+        "coastal erosion",
+        "saltwater intrusion",
+        "storm surge",
+        "submersion",
+      ],
+      answer: "submersion",
+    },
+    {
+      id: 10,
+      question:
+        "Which of the following coastal processes may cause hazards in the marine environment?",
+      choices: ["crustal movement", "tides", "waves", "all of the above"],
+      answer: "all of the above",
+    },
+    {
+      id: 11,
+      question:
+        "What do you call the scientific study of the chemical, biological and physical properties of ocean water?",
+      choices: ["Biology", "Chemistry", "Oceanography", "Physics"],
+      answer: "Oceanography",
+    },
+    {
+      id: 12,
+      question: "Where can we usually find aquifers?",
+      choices: [
+        "underground",
+        "in the ocean waves",
+        "on the top of the mountain",
+        "top surface of the rivers",
+      ],
+      answer: "underground",
+    },
+    {
+      id: 13,
+      question: "What two ions compose mainly the seawater?",
+      choices: [
+        "hydrogen and oxygen",
+        "hydrogen and potassium",
+        "nitrogen and phosphorus",
+        "sodium and chlorine",
+      ],
+      answer: "nitrogen and phosphorus",
+    },
+    {
+      id: 14,
+      question: "Which system is broader?",
+      choices: [
+        "coastal system",
+        "marine system",
+        "both A and B",
+        "neither A nor B",
+      ],
+      answer: "coastal system",
+    },
+    {
+      id: 15,
+      question:
+        "As a student, what ways can you do to help adapt and mitigate coastal hazards?",
+      choices: [
+        "Educate yourself.",
+        "Promote the programs of the community.",
+        "Participate in local disaster preparedness program.",
+        "All of the above",
+      ],
+      answer: "All of the above",
     },
   ],
 };

@@ -14,7 +14,7 @@ const CardButton = ({ title, route }: CardButtonProps) => {
       <TouchableOpacity
         onPress={() => router.push({ pathname: route as any })}
         className="mt-2 mx-1  bg-[#7DB91F] rounded-lg items-center justify-center"
-        style={{ padding: RFValue(16, 805) }}
+        style={{ padding: RFValue(14, 805) }}
       >
         <Text
           className="text-center font-psemibold text-white"

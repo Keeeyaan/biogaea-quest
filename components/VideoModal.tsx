@@ -24,7 +24,7 @@ const VideoModal = ({ isVisible, onClose, videoSource }: VideoModalProps) => {
             zIndex: 1,
           }}
         >
-          <AntDesign name="close" size={30} color="#fff" />
+          <AntDesign name="close" size={24} color="#fff" />
         </Pressable>
         <Video
           ref={videoRef}

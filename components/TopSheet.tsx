@@ -25,6 +25,7 @@ const VIDEO_MAP: { [key: string]: any } = {
   "organ-systems-of-representative-animals": require("@/assets/videos/organ-systems-of-representative-animals.mp4"),
   "interaction-and-interdependence": require("@/assets/videos/interaction-and-interdependence.mp4"),
   "process-of-evolution": require("@/assets/videos/process-of-evolution.mp4"),
+  "marine-and-coastal-processes": require("@/assets/videos/marine-and-coastal-processes.mp4"),
 };
 
 interface TopSheetProps {
@@ -100,7 +101,7 @@ const TopSheet = ({ topic }: TopSheetProps) => {
           >
             <Antdesign
               name="left"
-              size={30}
+              size={28}
               color="#fff"
               onPress={() => router.push("/")}
             />

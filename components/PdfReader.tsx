@@ -8,6 +8,7 @@ const pdfAssets: { [key: string]: any } = {
   "interaction-and-interdependence": require("../assets/pdfs/interaction-and-interdependence.pdf"),
   "organ-systems-of-representative-animals": require("../assets/pdfs/organ-systems-of-representative-animals.pdf"),
   "process-of-evolution": require("../assets/pdfs/process-of-evolution.pdf"),
+  "marine-and-coastal-processes": require("../assets/pdfs/marine-and-coastal-processes.pdf"),
 };
 
 const PdfReader = ({ topic }: { topic: string | string[] }) => {

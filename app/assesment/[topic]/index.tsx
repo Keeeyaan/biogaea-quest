@@ -12,6 +12,18 @@ import AssessmentResult from "../assessment-result";
 
 const screenHeight = Dimensions.get("window").height;
 
+interface QuestionWithFactors {
+  id: number;
+  question: string;
+  choices: string[];
+  answer: string;
+  factors?: string;
+}
+
+function hasFactors(question: any): question is QuestionWithFactors {
+  return "factors" in question;
+}
+
 const AssessmentScreen = () => {
   const { topic } = useLocalSearchParams();
   const router = useRouter();
@@ -107,8 +119,20 @@ const AssessmentScreen = () => {
               {currentQuestion.question}
             </Text>
           </View>
-          <View className="mt-6" style={{ marginTop: RFValue(18, 805) }}>
-            <Text className="mb-2 font-pmedium text-sm">Choices:</Text>
+
+          {hasFactors(currentQuestion) && currentQuestion?.factors && (
+            <View className="mt-2">
+              <Text
+                className="font-pmedium text-center"
+                style={{ fontSize: RFValue(15, 805) }}
+              >
+                {currentQuestion.factors}
+              </Text>
+            </View>
+          )}
+
+          <View className="mt-4" style={{ marginTop: RFValue(10, 805) }}>
+            <Text className="mb-2 font-psemibold text-sm">Choices:</Text>
             <ScrollView showsVerticalScrollIndicator={false}>
               {currentQuestion.choices.map((choice, index) => (
                 <CustomButton
