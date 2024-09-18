@@ -25,6 +25,11 @@ const TOPICS = [
     title: "Interaction and Interdependence",
     route: "/learn/interaction-and-interdependence",
   },
+  {
+    id: 5,
+    title: "Marine and Coastal Processes",
+    route: "/learn/marine-and-coastal-processes",
+  },
 ];
 
 const GAMES = [{ id: 1, title: "Trivia", route: "/play/trivia" }];
